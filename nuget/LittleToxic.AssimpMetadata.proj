@@ -15,6 +15,9 @@
     <PackageTags>assimp;3d;model;winmd;cswin32;pinvoke;interop</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/littletoxic/AssimpMetadata</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/littletoxic/AssimpMetadata</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
