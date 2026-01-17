@@ -483,3 +483,6 @@ $RECYCLE.BIN/
 
 # Native runtimes
 runtimes/
+
+# Claude settings
+.claude/
