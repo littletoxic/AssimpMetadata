@@ -8,7 +8,7 @@
 
     <!-- 包元数据 -->
     <PackageId>LittleToxic.AssimpMetadata</PackageId>
-    <Version>6.0.2-beta.6</Version>
+    <Version>6.0.2-beta.7</Version>
     <Authors>littel toxic</Authors>
     <Copyright>Copyright (c) littel toxic 2026</Copyright>
     <Description>Windows Metadata (.winmd) for Assimp C API, enabling use with CsWin32 source generator. Includes native assimp.dll for Windows x64.</Description>

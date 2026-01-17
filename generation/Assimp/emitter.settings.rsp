@@ -7,3 +7,5 @@ GetMaterialTexture::blend=[Optional][Out]
 GetMaterialTexture::op=[Optional][Out]
 GetMaterialTexture::mapmode=[Optional][Out]
 GetMaterialTexture::flags=[Optional][Out]
+# GetMaterialString
+GetMaterialString::pOut=[Out]
