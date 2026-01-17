@@ -1,0 +1,9 @@
+--memberRemap
+# GetMaterialTexture
+GetMaterialTexture::path=[Out]
+GetMaterialTexture::mapping=[Optional][Out]
+GetMaterialTexture::uvindex=[Optional][Out]
+GetMaterialTexture::blend=[Optional][Out]
+GetMaterialTexture::op=[Optional][Out]
+GetMaterialTexture::mapmode=[Optional][Out]
+GetMaterialTexture::flags=[Optional][Out]
