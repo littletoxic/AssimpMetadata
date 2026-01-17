@@ -1,0 +1,8 @@
+--prefixStrip
+ai
+
+--libraryPath
+assimp
+
+--language
+c
