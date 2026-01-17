@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageOutputPath>..\packages</PackageOutputPath>
+
+    <!-- 包元数据 -->
+    <PackageId>LittleToxic.AssimpMetadata</PackageId>
+    <Version>6.0.2-beta.4</Version>
+    <Authors>littel toxic</Authors>
+    <Copyright>Copyright (c) littel toxic 2026</Copyright>
+    <Description>Windows Metadata (.winmd) for Assimp C API, enabling use with CsWin32 source generator. Includes native assimp.dll for Windows x64.</Description>
+    <PackageTags>assimp;3d;model;winmd;cswin32;pinvoke;interop</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- README -->
+    <Content Include="README.md" Pack="true" PackagePath="" />
+
+    <!-- buildTransitive: props 文件和 winmd -->
+    <Content Include="buildTransitive\**\*" Pack="true" PackagePath="buildTransitive" />
+    <Content Include="..\bin\Assimp.winmd" Pack="true" PackagePath="buildTransitive" />
+
+    <!-- runtimes: native DLL -->
+    <Content Include="..\runtimes\**\*" Pack="true" PackagePath="runtimes" />
+
+    <!-- resolve NU5127;NU5128 -->
+    <Content Include="_._" Pack="true" PackagePath="lib/netstandard2.0" />
+  </ItemGroup>
+
+</Project>

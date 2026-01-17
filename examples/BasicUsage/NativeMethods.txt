@@ -1,0 +1,12 @@
+// Import/Export APIs
+ImportFile
+ReleaseImport
+GetErrorString
+
+// Post-processing flags
+PostProcessSteps
+
+// Scene structure (implicitly included but good to be explicit)
+Scene
+Mesh
+AssimpString

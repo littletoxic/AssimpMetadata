@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.Windows.WinmdGenerator/0.63.31-preview">
+  <PropertyGroup>
+    <OutputWinmd>$(MSBuildThisFileDirectory)..\..\bin\Assimp.winmd</OutputWinmd>
+    <WinmdVersion>6.0.2.0</WinmdVersion>
+    <AdditionalIncludes>include</AdditionalIncludes>
+    <SdkIncRoot>include</SdkIncRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Partition Include="main.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ScraperRsp Include="common.settings.rsp" />
+  </ItemGroup>
+
+</Project>

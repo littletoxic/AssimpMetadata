@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BasicUsage": {
+      "commandName": "Project",
+      "commandLineArgs": "\"E:\\source\\DXPractice\\DXDemo9\\miyu\\scene.gltf\""
+    }
+  }
+}
