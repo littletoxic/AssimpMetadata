@@ -9,3 +9,9 @@ GetMaterialTexture::mapmode=[Optional][Out]
 GetMaterialTexture::flags=[Optional][Out]
 # GetMaterialString
 GetMaterialString::pOut=[Out]
+
+--enumMakeFlags
+PostProcessSteps
+
+--enumAddition
+PostProcessSteps::ConvertToLeftHanded=MakeLeftHanded|FlipUVs|FlipWindingOrder|0
