@@ -1,0 +1,68 @@
+# Doxygen configuration for Assimp C API documentation extraction
+
+PROJECT_NAME           = "Assimp"
+PROJECT_BRIEF          = "Open Asset Import Library C API"
+
+# Input settings - only C API headers from settings.rsp
+INPUT                  = ../generation/Assimp/include/assimp/cimport.h \
+                         ../generation/Assimp/include/assimp/cexport.h \
+                         ../generation/Assimp/include/assimp/cfileio.h \
+                         ../generation/Assimp/include/assimp/version.h \
+                         ../generation/Assimp/include/assimp/postprocess.h \
+                         ../generation/Assimp/include/assimp/importerdesc.h \
+                         ../generation/Assimp/include/assimp/defs.h \
+                         ../generation/Assimp/include/assimp/config.h \
+                         ../generation/Assimp/include/assimp/types.h \
+                         ../generation/Assimp/include/assimp/vector2.h \
+                         ../generation/Assimp/include/assimp/vector3.h \
+                         ../generation/Assimp/include/assimp/color4.h \
+                         ../generation/Assimp/include/assimp/matrix3x3.h \
+                         ../generation/Assimp/include/assimp/matrix4x4.h \
+                         ../generation/Assimp/include/assimp/quaternion.h \
+                         ../generation/Assimp/include/assimp/scene.h \
+                         ../generation/Assimp/include/assimp/texture.h \
+                         ../generation/Assimp/include/assimp/mesh.h \
+                         ../generation/Assimp/include/assimp/aabb.h \
+                         ../generation/Assimp/include/assimp/light.h \
+                         ../generation/Assimp/include/assimp/camera.h \
+                         ../generation/Assimp/include/assimp/material.h \
+                         ../generation/Assimp/include/assimp/anim.h \
+                         ../generation/Assimp/include/assimp/metadata.h
+
+FILE_PATTERNS          = *.h
+RECURSIVE              = NO
+EXCLUDE_PATTERNS       = *.inl *.hpp
+
+# Output settings - XML only
+GENERATE_XML           = YES
+XML_OUTPUT             = xml
+XML_PROGRAMLISTING     = NO
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+
+# Extraction settings
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Force C language parsing to skip C++ content
+EXTENSION_MAPPING      = h=C
+
+# Preprocessing - do NOT define __cplusplus to skip C++ sections
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+PREDEFINED             = ASSIMP_API= \
+                         C_STRUCT= \
+                         C_ENUM= \
+                         ASSIMP_CALL=
+
+# Documentation settings
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+
+# Warning settings
+QUIET                  = YES
+WARNINGS               = YES

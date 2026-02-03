@@ -1,6 +1,7 @@
 <Project>
   <ItemGroup>
     <ProjectionMetadataWinmd Include="$(MSBuildThisFileDirectory)Assimp.winmd" />
+    <ProjectionDocs Include="$(MSBuildThisFileDirectory)apidocs.msgpack" />
     <AppLocalAllowedLibraries Include="assimp" />
   </ItemGroup>
 </Project>

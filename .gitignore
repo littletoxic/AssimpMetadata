@@ -489,3 +489,6 @@ runtimes/
 
 # Keep rsp files in generation/Assimp but ignore those in obj
 !generation/Assimp/*.rsp
+
+# Doxygen generated XML
+apidocs/xml/

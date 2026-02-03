@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/apidocs/">
+    <Project Path="apidocs/ScrapeDocs/ScrapeDocs.csproj" />
+  </Folder>
+  <Folder Name="/examples/">
+    <Project Path="examples/BasicUsage/BasicUsage.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="build.ps1" />
+    <File Path=".gitignore" />
+  </Folder>
+</Solution>
