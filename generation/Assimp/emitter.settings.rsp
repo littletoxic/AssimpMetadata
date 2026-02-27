@@ -9,6 +9,11 @@ GetMaterialTexture::mapmode=[Optional][Out]
 GetMaterialTexture::flags=[Optional][Out]
 # GetMaterialString
 GetMaterialString::pOut=[Out]
+# GetMaterialColor
+GetMaterialColor::pOut=[Out]
+# GetMaterialFloatArray
+GetMaterialFloatArray::pOut=[Out][NativeArrayInfo(CountParamIndex = 5)]
+GetMaterialFloatArray::pMax=[Optional][In][Out]
 
 --enumMakeFlags
 PostProcessSteps

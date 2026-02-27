@@ -16,7 +16,7 @@ foreach (var key in data.Keys.Take(20))
     Console.WriteLine($"  {key}: {api.Description?.Substring(0, Math.Min(60, api.Description?.Length ?? 0))}...");
 }
 Console.WriteLine("\nSample - ImportFile:");
-if (data.TryGetValue("ImportFile", out var importFile))
+if (data.TryGetValue("aiImportFile", out var importFile))
 {
     Console.WriteLine($"  Description: {importFile.Description}");
     Console.WriteLine($"  Parameters: {string.Join(", ", importFile.Parameters.Keys)}");
