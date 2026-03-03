@@ -14,6 +14,9 @@ GetMaterialColor::pOut=[Out]
 # GetMaterialFloatArray
 GetMaterialFloatArray::pOut=[Out][NativeArrayInfo(CountParamIndex = 5)]
 GetMaterialFloatArray::pMax=[Optional][In][Out]
+# GetMaterialIntegerArray
+GetMaterialIntegerArray::pOut=[Out][NativeArrayInfo(CountParamIndex = 5)]
+GetMaterialIntegerArray::pMax=[Optional][In][Out]
 
 --enumMakeFlags
 PostProcessSteps

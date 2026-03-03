@@ -8,7 +8,7 @@
 
     <!-- 包元数据 -->
     <PackageId>LittleToxic.AssimpMetadata</PackageId>
-    <Version>6.0.4-beta.2</Version>
+    <Version>6.0.4-beta.3</Version>
     <Authors>littel toxic</Authors>
     <Copyright>Copyright (c) littel toxic 2026</Copyright>
     <Description>Windows Metadata (.winmd) for Assimp C API, enabling use with CsWin32 source generator. Includes native assimp.dll for Windows x64.</Description>
@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <!-- README -->
-    <Content Include="README.md" Pack="true" PackagePath="" />
+    <Content Include="..\README.md" Pack="true" PackagePath="" />
 
     <!-- buildTransitive: props 文件和 winmd -->
     <Content Include="buildTransitive\**\*" Pack="true" PackagePath="buildTransitive" />
