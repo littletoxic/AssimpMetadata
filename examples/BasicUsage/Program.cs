@@ -4,14 +4,7 @@ using Windows.Win32.Foundation;
 
 unsafe
 {
-    if (args.Length == 0)
-    {
-        Console.WriteLine("Usage: BasicUsage <model-file>");
-        Console.WriteLine("Example: BasicUsage model.obj");
-        return 1;
-    }
-
-    string filePath = args[0];
+    string filePath = args.Length == 0 ? GetSmokeTestModelPath() : args[0];
     if (!File.Exists(filePath))
     {
         Console.WriteLine($"Error: File not found: {filePath}");
@@ -67,4 +60,9 @@ static unsafe string GetAiString(AssimpString* str)
     // CsWin32 wraps fixed arrays with CHAR type - cast to sbyte* for Marshal
     sbyte* pData = (sbyte*)&str->data._0;
     return Marshal.PtrToStringUTF8((nint)pData, (int)str->length) ?? string.Empty;
+}
+
+static string GetSmokeTestModelPath()
+{
+    return Path.Combine(AppContext.BaseDirectory, "smoke-test-triangle.obj");
 }
