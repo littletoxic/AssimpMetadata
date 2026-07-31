@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Windows.WinmdGenerator/0.70.11-preview">
   <PropertyGroup>
     <OutputWinmd>$(MSBuildThisFileDirectory)..\..\bin\Assimp.winmd</OutputWinmd>
-    <WinmdVersion>6.0.5.0</WinmdVersion>
+    <WinmdVersion>$(AssimpWinmdVersion)</WinmdVersion>
     <AdditionalIncludes>include</AdditionalIncludes>
     <SdkIncRoot>include</SdkIncRoot>
   </PropertyGroup>

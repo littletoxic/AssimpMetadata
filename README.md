@@ -4,7 +4,7 @@ Windows Metadata (.winmd) for the [Assimp](https://github.com/assimp/assimp) (Op
 
 ## Features
 
-- Complete metadata for Assimp 6.0.5 C API
+- Complete metadata for the pinned Assimp C API release
 - Includes native Assimp libraries for Windows x64, Windows x86, Linux x64, and macOS arm64
 - Seamless integration with CsWin32
 

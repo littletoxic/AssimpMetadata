@@ -485,6 +485,9 @@ $RECYCLE.BIN/
 runtimes/
 .asset-cache/
 
+# Assimp headers restored by pack.ps1
+/generation/Assimp/include/assimp/
+
 # Claude settings
 .claude/
 

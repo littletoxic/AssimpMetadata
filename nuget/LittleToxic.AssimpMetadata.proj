@@ -8,10 +8,10 @@
 
     <!-- 包元数据 -->
     <PackageId>LittleToxic.AssimpMetadata</PackageId>
-    <Version>6.0.5-beta.2</Version>
+    <Version>$(AssimpMetadataPackageVersion)</Version>
     <Authors>littel toxic</Authors>
     <Copyright>Copyright (c) littel toxic 2026</Copyright>
-    <Description>Windows Metadata (.winmd) for Assimp 6.0.5 C API, enabling use with CsWin32 source generator. Includes native Assimp libraries for Windows x64, Windows x86, Linux x64, and macOS arm64.</Description>
+    <Description>Windows Metadata (.winmd) for Assimp $(AssimpUpstreamVersion) C API, enabling use with CsWin32 source generator. Includes native Assimp libraries for Windows x64, Windows x86, Linux x64, and macOS arm64.</Description>
     <PackageTags>assimp;3d;model;winmd;cswin32;pinvoke;interop;native</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>

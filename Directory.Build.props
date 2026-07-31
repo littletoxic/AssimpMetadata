@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <AssimpUpstreamVersion>6.0.5</AssimpUpstreamVersion>
+    <AssimpUpstreamCommit>392a658f9c271be965271f45e7521a1b80ea4392</AssimpUpstreamCommit>
+    <AssimpMetadataPrerelease>beta.3</AssimpMetadataPrerelease>
+
+    <AssimpWinmdVersion>$(AssimpUpstreamVersion).0</AssimpWinmdVersion>
+    <AssimpMetadataPackageVersion>$(AssimpUpstreamVersion)</AssimpMetadataPackageVersion>
+    <AssimpMetadataPackageVersion Condition="'$(AssimpMetadataPrerelease)' != ''">$(AssimpUpstreamVersion)-$(AssimpMetadataPrerelease)</AssimpMetadataPackageVersion>
+  </PropertyGroup>
+</Project>
